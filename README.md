@@ -19,5 +19,5 @@ Run `npm run start:dev`
 To build production version:
 Run `npm run build`
 
-Demo: https://test_volodumurstroyuk.github.io/src/public/
+Demo: https://volodumurstroyuk.github.io/src/public/
 
