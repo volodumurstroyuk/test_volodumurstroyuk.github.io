@@ -16,13 +16,15 @@ class PreloaderPageRefresh extends React.Component {
         let thisO = this;
 
         if(y < maxScroll){
-            thisO.setState({cssClasses: 'show-all'});
+            thisO.setState({cssClasses: 'show-all show-animation'});
         } else if(y < maxScroll / 2){
-            thisO.setState({cssClasses: 'show-half'});
-        } else if(y < maxScroll / 3){
-            thisO.setState({cssClasses: 'show-third'});
+            thisO.setState({cssClasses: 'show-half show-animation'});
         } else {
-            thisO.setState({cssClasses: ''});
+            thisO.setState({cssClasses: 'show-animation'});
+            clearTimeout(thisO.showTimeout);
+            thisO.showTimeout = setTimeout(() => {
+                thisO.setState({cssClasses: ''});
+            }, 500);
         }
     }
 
@@ -37,7 +39,10 @@ class PreloaderPageRefresh extends React.Component {
         document.addEventListener("touchend", () => {
             thisO.showingPreloader(0);
             if(window.scrollY < maxScroll){
-                window.location.reload(true);
+                clearTimeout(thisO.refreshTimeout);
+                thisO.refreshTimeout = setTimeout(() => {
+                    window.location.reload(true);
+                }, 500);
             }
         }, false);
     }
