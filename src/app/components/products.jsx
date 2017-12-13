@@ -1,38 +1,9 @@
 import React from 'react';
 import Swiper from 'swiper';
 import { connect } from 'react-redux';
+import PreloaderPageRefresh from './peloader-page-refresh.jsx';
 
 class Products extends React.Component {
-
-    constructor(){
-        super();
-        this.state = {
-            yS: 0,
-            yM: 0,
-            yE: 0,
-        }
-    }
-
-    componentWillMount(){
-
-        let thisO = this,
-            doc = document.documentElement;
-
-        /*document.addEventListener("touchcancel", (a) => {
-            console.log('touchcancel');
-            console.log('a = ', a);
-        }, false);*/
-        document.addEventListener("touchstart", (a) => {
-            thisO.setState({yS: window.scrollY});
-        }, false);
-
-        document.addEventListener("touchmove", (a) => {
-            thisO.setState({yM: window.scrollY});
-        }, false);
-        document.addEventListener("touchend", (a) => {
-            thisO.setState({yE: window.scrollY});
-        }, false);
-    }
 
     componentDidMount(){
         new Swiper(this.boxSwiper, {
@@ -53,6 +24,7 @@ class Products extends React.Component {
     render() {
 
         return <div>
+            <PreloaderPageRefresh />
             <div ref={(e) => { this.boxSwiper = e; }} className="swiper-container">
                 <div className="swiper-wrapper">
                     {
@@ -71,9 +43,6 @@ class Products extends React.Component {
 
                 <div className="swiper-pagination"/>
             </div>
-            <p>start = {this.state.yS}</p>
-            <p>move = {this.state.yM}</p>
-            <p>end = {this.state.yE}</p>
         </div>
     }
 }

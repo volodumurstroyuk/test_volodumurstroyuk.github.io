@@ -1,0 +1,52 @@
+$loaderSize: 40px;
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.page-refresh-preloader {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: $loaderSize;
+    height: $loaderSize;
+    margin: 5px -.5 * $loaderSize;
+    background: url("../images/design/proloader.svg") scroll transparent no-repeat center;
+    background-size: contain;
+    font-size: 100%;
+    z-index: 999;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    animation: spin .5s linear infinite;
+    transition: 1s;
+    opacity: 0;
+    visibility: hidden;
+
+    &.show-third{
+       opacity: .33;
+        visibility: visible;
+    }
+
+    &.show-half{
+       opacity: .5;
+        visibility: visible;
+    }
+
+    &.show-all{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.test-scroll{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
