@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "1e612890d8d97c9737d8"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "e9586351c40ddfdaf341"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -32797,15 +32797,25 @@ var PreloaderPageRefresh = function (_React$Component) {
             var thisO = this,
                 maxScroll = -200;
 
-            if (y > maxScroll / 6 && y < maxScroll / 3) {
-                thisO.setState({ cssClasses: 'show-third' });
-            } else if (y > maxScroll / 6 && y < maxScroll / 2) {
-                thisO.setState({ cssClasses: 'show-half' });
-            } else if (y > maxScroll / 6) {
+            if (y < maxScroll) {
                 thisO.setState({ cssClasses: 'show-all' });
+            } else if (y < maxScroll / 2) {
+                thisO.setState({ cssClasses: 'show-half' });
+            } else if (y < maxScroll / 3) {
+                thisO.setState({ cssClasses: 'show-third' });
             } else {
                 thisO.setState({ cssClasses: '' });
             }
+
+            /*if ((y > maxScroll / 6) && (y < maxScroll / 3)) {
+                thisO.setState({cssClasses: 'show-third'});
+            } else if ((y > maxScroll / 6) && (y < maxScroll / 2)) {
+                thisO.setState({cssClasses: 'show-half'});
+            } else if ((y > maxScroll / 6)) {
+                thisO.setState({cssClasses: 'show-all'});
+            } else {
+                thisO.setState({cssClasses: ''});
+            }*/
         }
     }, {
         key: 'componentWillMount',

@@ -15,7 +15,17 @@ class PreloaderPageRefresh extends React.Component {
         let thisO = this,
             maxScroll = -200;
 
-        if ((y > maxScroll / 6) && (y < maxScroll / 3)) {
+        if(y < maxScroll){
+            thisO.setState({cssClasses: 'show-all'});
+        } else if(y < maxScroll / 2){
+            thisO.setState({cssClasses: 'show-half'});
+        } else if(y < maxScroll / 3){
+            thisO.setState({cssClasses: 'show-third'});
+        } else {
+            thisO.setState({cssClasses: ''});
+        }
+
+        /*if ((y > maxScroll / 6) && (y < maxScroll / 3)) {
             thisO.setState({cssClasses: 'show-third'});
         } else if ((y > maxScroll / 6) && (y < maxScroll / 2)) {
             thisO.setState({cssClasses: 'show-half'});
@@ -23,7 +33,7 @@ class PreloaderPageRefresh extends React.Component {
             thisO.setState({cssClasses: 'show-all'});
         } else {
             thisO.setState({cssClasses: ''});
-        }
+        }*/
     }
 
     componentWillMount(){
