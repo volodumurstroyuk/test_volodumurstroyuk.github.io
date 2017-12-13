@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "621f2d0d8f70d922c52f"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "1a447e1ae17480e2be1b"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -32802,7 +32802,9 @@ var PreloaderPageRefresh = function (_React$Component) {
             } else if (y < maxScroll / 2) {
                 thisO.setState({ cssClasses: 'show-half show-animation' });
             } else {
-                thisO.setState({ cssClasses: 'show-animation' });
+                if (y < 0) {
+                    thisO.setState({ cssClasses: 'show-animation' });
+                }
                 clearTimeout(thisO.showTimeout);
                 thisO.showTimeout = setTimeout(function () {
                     thisO.setState({ cssClasses: '' });

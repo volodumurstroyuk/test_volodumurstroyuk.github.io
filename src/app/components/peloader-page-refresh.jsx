@@ -20,7 +20,9 @@ class PreloaderPageRefresh extends React.Component {
         } else if(y < maxScroll / 2){
             thisO.setState({cssClasses: 'show-half show-animation'});
         } else {
-            thisO.setState({cssClasses: 'show-animation'});
+            if(y < 0) {
+                thisO.setState({cssClasses: 'show-animation'});
+            }
             clearTimeout(thisO.showTimeout);
             thisO.showTimeout = setTimeout(() => {
                 thisO.setState({cssClasses: ''});
