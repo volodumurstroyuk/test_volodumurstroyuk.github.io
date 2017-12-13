@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "e9586351c40ddfdaf341"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "2dc2c08eea1a33a7c937"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -1574,7 +1574,7 @@ exports = module.exports = __webpack_require__(30)(undefined);
 exports.i(__webpack_require__(82), "");
 
 // module
-exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  outline: none;\n  border: none;\n  -webkit-tap-highlight-color: transparent;\n  -webkit-tap-highlight-color: transparent;\n  box-sizing: border-box; }\n\nvideo::-webkit-media-controls {\n  display: none !important; }\n\nmenu,\nol,\nul {\n  list-style: none outside none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-weight: normal;\n  font-size: 100%; }\n\nb,\nstrong {\n  font-weight: 900; }\n\ninput[type=text],\ntextarea {\n  outline: none;\n  -webkit-appearance: none; }\n\nbutton::-moz-focus-inner,\ninput[type=\"button\"]::-moz-focus-inner,\ninput[type=\"file\"] > input[type=\"button\"]::-moz-focus-inner,\ninput[type=\"reset\"]::-moz-focus-inner,\ninput[type=\"submit\"]::-moz-focus-inner,\ninput[type=\"submit\"]::-moz-focus-inner {\n  border: none; }\n\ninput[type=text]::-ms-clear {\n  display: none;\n  width: 0;\n  height: 0; }\n\ninput[type=text]::-ms-reveal {\n  display: none;\n  width: 0;\n  height: 0; }\n\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration,\ninput[type=\"search\"]::-webkit-search-results-button,\ninput[type=\"search\"]::-webkit-search-results-decoration {\n  display: none; }\n\ninput::-ms-clear {\n  display: none !important; }\n\n.link,\na {\n  outline: none !important;\n  color: #333333;\n  text-decoration: none !important; }\n\n.h1,\n.h2,\n.h3,\nh1,\nh2,\nh3 {\n  margin-top: 0;\n  margin-bottom: 0; }\n\n.row {\n  margin: 0; }\n\nul {\n  margin: 0; }\n\np {\n  margin: 0; }\n\nhtml {\n  -webkit-text-size-adjust: none;\n  width: 100%;\n  font-size: 14px; }\n\nbody {\n  font-family: Arial, \"Helvetica Neue\", Helvetica, sans-serif;\n  color: #333333;\n  font-weight: 400;\n  width: 100%;\n  background: #bcbcbc;\n  font-size: 100%;\n  margin: 0;\n  padding: 0;\n  height: 3000px; }\n\n.swiper-container {\n  width: 100%;\n  padding-top: 3.57143em; }\n\n.swiper-wrapper {\n  height: auto; }\n\n.swiper-slide {\n  background: #fff no-repeat center;\n  background-size: cover;\n  width: 21.42857em;\n  height: 21.42857em;\n  border-radius: 1.14286em;\n  overflow: hidden;\n  text-align: center; }\n  .swiper-slide .name {\n    position: absolute;\n    color: #ffffff;\n    bottom: 0.71429em;\n    left: 0;\n    width: 100%;\n    text-shadow: 1px 1px 5px #000000; }\n\n@keyframes spin {\n  0% {\n    transform: rotate(0deg); }\n  100% {\n    transform: rotate(360deg); } }\n\n.page-refresh-preloader {\n  position: fixed;\n  top: 0;\n  left: 50%;\n  width: 40px;\n  height: 40px;\n  margin: 5px -20px;\n  background: url(" + __webpack_require__(83) + ") scroll transparent no-repeat center;\n  background-size: contain;\n  font-size: 100%;\n  z-index: 999;\n  -webkit-transform-origin: 50% 50%;\n  transform-origin: 50% 50%;\n  animation: spin .5s linear infinite;\n  transition: 1s;\n  opacity: 0;\n  visibility: hidden; }\n  .page-refresh-preloader.show-third {\n    opacity: .33;\n    visibility: visible; }\n  .page-refresh-preloader.show-half {\n    opacity: .5;\n    visibility: visible; }\n  .page-refresh-preloader.show-all {\n    opacity: 1;\n    visibility: visible; }\n\n.test-scroll {\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 999; }\n", ""]);
+exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  outline: none;\n  border: none;\n  -webkit-tap-highlight-color: transparent;\n  -webkit-tap-highlight-color: transparent;\n  box-sizing: border-box; }\n\nvideo::-webkit-media-controls {\n  display: none !important; }\n\nmenu,\nol,\nul {\n  list-style: none outside none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-weight: normal;\n  font-size: 100%; }\n\nb,\nstrong {\n  font-weight: 900; }\n\ninput[type=text],\ntextarea {\n  outline: none;\n  -webkit-appearance: none; }\n\nbutton::-moz-focus-inner,\ninput[type=\"button\"]::-moz-focus-inner,\ninput[type=\"file\"] > input[type=\"button\"]::-moz-focus-inner,\ninput[type=\"reset\"]::-moz-focus-inner,\ninput[type=\"submit\"]::-moz-focus-inner,\ninput[type=\"submit\"]::-moz-focus-inner {\n  border: none; }\n\ninput[type=text]::-ms-clear {\n  display: none;\n  width: 0;\n  height: 0; }\n\ninput[type=text]::-ms-reveal {\n  display: none;\n  width: 0;\n  height: 0; }\n\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration,\ninput[type=\"search\"]::-webkit-search-results-button,\ninput[type=\"search\"]::-webkit-search-results-decoration {\n  display: none; }\n\ninput::-ms-clear {\n  display: none !important; }\n\n.link,\na {\n  outline: none !important;\n  color: #333333;\n  text-decoration: none !important; }\n\n.h1,\n.h2,\n.h3,\nh1,\nh2,\nh3 {\n  margin-top: 0;\n  margin-bottom: 0; }\n\n.row {\n  margin: 0; }\n\nul {\n  margin: 0; }\n\np {\n  margin: 0; }\n\nhtml {\n  -webkit-text-size-adjust: none;\n  width: 100%;\n  font-size: 14px; }\n\nbody {\n  font-family: Arial, \"Helvetica Neue\", Helvetica, sans-serif;\n  color: #333333;\n  font-weight: 400;\n  width: 100%;\n  background: #bcbcbc;\n  font-size: 100%;\n  margin: 0;\n  padding: 0;\n  height: 3000px; }\n\n.swiper-container {\n  width: 100%;\n  padding-top: 3.57143em; }\n\n.swiper-wrapper {\n  height: auto; }\n\n.swiper-slide {\n  background: #fff no-repeat center;\n  background-size: cover;\n  width: 21.42857em;\n  height: 21.42857em;\n  border-radius: 1.14286em;\n  overflow: hidden;\n  text-align: center; }\n  .swiper-slide .name {\n    position: absolute;\n    color: #ffffff;\n    bottom: 0.71429em;\n    left: 0;\n    width: 100%;\n    text-shadow: 1px 1px 5px #000000; }\n\n@keyframes spin {\n  0% {\n    transform: rotate(0deg); }\n  100% {\n    transform: rotate(360deg); } }\n\n.page-refresh-preloader {\n  position: fixed;\n  top: 0;\n  left: 50%;\n  width: 40px;\n  height: 40px;\n  margin: 5px -20px;\n  background: url(" + __webpack_require__(83) + ") scroll transparent no-repeat center;\n  background-size: contain;\n  font-size: 100%;\n  z-index: 999;\n  -webkit-transform-origin: 50% 50%;\n  transform-origin: 50% 50%;\n  transition: 1s;\n  opacity: 0;\n  visibility: hidden; }\n  .page-refresh-preloader.show-third {\n    opacity: .33;\n    visibility: visible;\n    animation: spin .75s linear infinite; }\n  .page-refresh-preloader.show-half {\n    opacity: .5;\n    visibility: visible;\n    animation: spin .5s linear infinite; }\n  .page-refresh-preloader.show-all {\n    opacity: 1;\n    visibility: visible;\n    animation: spin .25s linear infinite; }\n\n.test-scroll {\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 999; }\n", ""]);
 
 // exports
 
@@ -32776,6 +32776,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var maxScroll = -200;
+
 var PreloaderPageRefresh = function (_React$Component) {
     _inherits(PreloaderPageRefresh, _React$Component);
 
@@ -32785,8 +32787,7 @@ var PreloaderPageRefresh = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (PreloaderPageRefresh.__proto__ || Object.getPrototypeOf(PreloaderPageRefresh)).call(this));
 
         _this.state = {
-            cssClasses: '',
-            y: 0
+            cssClasses: ''
         };
         return _this;
     }
@@ -32794,8 +32795,7 @@ var PreloaderPageRefresh = function (_React$Component) {
     _createClass(PreloaderPageRefresh, [{
         key: 'showingPreloader',
         value: function showingPreloader(y) {
-            var thisO = this,
-                maxScroll = -200;
+            var thisO = this;
 
             if (y < maxScroll) {
                 thisO.setState({ cssClasses: 'show-all' });
@@ -32806,16 +32806,6 @@ var PreloaderPageRefresh = function (_React$Component) {
             } else {
                 thisO.setState({ cssClasses: '' });
             }
-
-            /*if ((y > maxScroll / 6) && (y < maxScroll / 3)) {
-                thisO.setState({cssClasses: 'show-third'});
-            } else if ((y > maxScroll / 6) && (y < maxScroll / 2)) {
-                thisO.setState({cssClasses: 'show-half'});
-            } else if ((y > maxScroll / 6)) {
-                thisO.setState({cssClasses: 'show-all'});
-            } else {
-                thisO.setState({cssClasses: ''});
-            }*/
         }
     }, {
         key: 'componentWillMount',
@@ -32823,16 +32813,15 @@ var PreloaderPageRefresh = function (_React$Component) {
 
             var thisO = this;
 
-            document.addEventListener("touchstart", function () {
-                thisO.setState({ y: window.scrollY });
-            }, false);
-
             document.addEventListener("touchmove", function () {
                 thisO.showingPreloader(window.scrollY);
-                thisO.setState({ y: window.scrollY });
             }, false);
+
             document.addEventListener("touchend", function () {
-                thisO.setState({ y: window.scrollY });
+                thisO.showingPreloader(0);
+                if (window.scrollY < maxScroll) {
+                    window.location.reload(true);
+                }
             }, false);
         }
     }, {

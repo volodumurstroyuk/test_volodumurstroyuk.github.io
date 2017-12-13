@@ -1,19 +1,19 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
+const maxScroll = -200;
+
 class PreloaderPageRefresh extends React.Component {
 
     constructor(){
         super();
         this.state = {
             cssClasses: '',
-            y: 0,
         }
     }
 
     showingPreloader(y) {
-        let thisO = this,
-            maxScroll = -200;
+        let thisO = this;
 
         if(y < maxScroll){
             thisO.setState({cssClasses: 'show-all'});
@@ -24,32 +24,21 @@ class PreloaderPageRefresh extends React.Component {
         } else {
             thisO.setState({cssClasses: ''});
         }
-
-        /*if ((y > maxScroll / 6) && (y < maxScroll / 3)) {
-            thisO.setState({cssClasses: 'show-third'});
-        } else if ((y > maxScroll / 6) && (y < maxScroll / 2)) {
-            thisO.setState({cssClasses: 'show-half'});
-        } else if ((y > maxScroll / 6)) {
-            thisO.setState({cssClasses: 'show-all'});
-        } else {
-            thisO.setState({cssClasses: ''});
-        }*/
     }
 
     componentWillMount(){
 
         let thisO = this;
 
-        document.addEventListener("touchstart", () => {
-            thisO.setState({y: window.scrollY});
-        }, false);
-
         document.addEventListener("touchmove", () => {
             thisO.showingPreloader(window.scrollY);
-            thisO.setState({y: window.scrollY});
         }, false);
+
         document.addEventListener("touchend", () => {
-            thisO.setState({y: window.scrollY});
+            thisO.showingPreloader(0);
+            if(window.scrollY < maxScroll){
+                window.location.reload(true);
+            }
         }, false);
     }
 
@@ -64,9 +53,7 @@ class PreloaderPageRefresh extends React.Component {
 
 export default connect(
     state => ({
-
     }),
     dispatch => ({
-
     })
 )(PreloaderPageRefresh);

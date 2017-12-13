@@ -23,7 +23,6 @@ $loaderSize: 40px;
     z-index: 999;
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
-    animation: spin .5s linear infinite;
     transition: 1s;
     opacity: 0;
     visibility: hidden;
@@ -31,16 +30,19 @@ $loaderSize: 40px;
     &.show-third{
        opacity: .33;
         visibility: visible;
+        animation: spin .75s linear infinite;
     }
 
     &.show-half{
        opacity: .5;
         visibility: visible;
+        animation: spin .5s linear infinite;
     }
 
     &.show-all{
         opacity: 1;
         visibility: visible;
+        animation: spin .25s linear infinite;
     }
 }
 
