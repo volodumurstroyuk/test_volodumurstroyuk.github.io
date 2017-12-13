@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "0f2ac0ecad8790066ba1"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "b47e1adc57f98cf1753f"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -24976,12 +24976,44 @@ var Products = function (_React$Component) {
     function Products() {
         _classCallCheck(this, Products);
 
-        return _possibleConstructorReturn(this, (Products.__proto__ || Object.getPrototypeOf(Products)).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (Products.__proto__ || Object.getPrototypeOf(Products)).call(this));
+
+        _this.state = {
+            yS: 0,
+            yM: 0,
+            yE: 0
+        };
+        return _this;
     }
 
     _createClass(Products, [{
         key: 'componentWillMount',
-        value: function componentWillMount() {}
+        value: function componentWillMount() {
+
+            var thisO = this,
+                doc = document.documentElement;
+
+            /*document.addEventListener("touchcancel", (a) => {
+                console.log('touchcancel');
+                console.log('a = ', a);
+            }, false);*/
+            document.addEventListener("touchstart", function (a) {
+                console.log('touchstart');
+                console.log('a = ', a);
+                thisO.setState({ yS: doc.scrollTop });
+            }, false);
+
+            document.addEventListener("touchmove", function (a) {
+                console.log('touchmove');
+                console.log('a = ', a);
+                thisO.setState({ yM: doc.scrollTop });
+            }, false);
+            document.addEventListener("touchend", function (a) {
+                console.log('touchend');
+                console.log('a = ', a);
+                thisO.setState({ yE: doc.scrollTop });
+            }, false);
+        }
     }, {
         key: 'componentDidMount',
         value: function componentDidMount() {
@@ -25006,27 +25038,49 @@ var Products = function (_React$Component) {
 
             return _react2.default.createElement(
                 'div',
-                { ref: function ref(e) {
-                        _this2.boxSwiper = e;
-                    }, className: 'swiper-container' },
+                null,
                 _react2.default.createElement(
                     'div',
-                    { className: 'swiper-wrapper' },
-                    this.props.products.collection.filter(function (v) {
-                        return v.image_url !== null;
-                    }).map(function (v, k) {
-                        return _react2.default.createElement(
-                            'div',
-                            { key: 'product-key-' + k, className: 'swiper-slide', style: { backgroundImage: 'url(' + v.image_url + ')' } },
-                            _react2.default.createElement(
+                    { ref: function ref(e) {
+                            _this2.boxSwiper = e;
+                        }, className: 'swiper-container' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'swiper-wrapper' },
+                        this.props.products.collection.filter(function (v) {
+                            return v.image_url !== null;
+                        }).map(function (v, k) {
+                            return _react2.default.createElement(
                                 'div',
-                                { className: 'name' },
-                                _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: v.name } })
-                            )
-                        );
-                    })
+                                { key: 'product-key-' + k, className: 'swiper-slide', style: { backgroundImage: 'url(' + v.image_url + ')' } },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'name' },
+                                    _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: v.name } })
+                                )
+                            );
+                        })
+                    ),
+                    _react2.default.createElement('div', { className: 'swiper-pagination' })
                 ),
-                _react2.default.createElement('div', { className: 'swiper-pagination' })
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'start = ',
+                    this.state.yS
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'move = ',
+                    this.state.yM
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'end = ',
+                    this.state.yE
+                )
             );
         }
     }]);
