@@ -46,7 +46,6 @@ class PreloaderPageRefresh extends React.Component {
 
         return <div>
             <div className={'page-refresh-preloader ' + this.state.cssClasses} />
-            <p className="test-scroll">y = {this.state.y}</p>
         </div>
     }
 }

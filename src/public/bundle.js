@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "2dc2c08eea1a33a7c937"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "683857f52b0274685f39"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -32831,13 +32831,7 @@ var PreloaderPageRefresh = function (_React$Component) {
             return _react2.default.createElement(
                 'div',
                 null,
-                _react2.default.createElement('div', { className: 'page-refresh-preloader ' + this.state.cssClasses }),
-                _react2.default.createElement(
-                    'p',
-                    { className: 'test-scroll' },
-                    'y = ',
-                    this.state.y
-                )
+                _react2.default.createElement('div', { className: 'page-refresh-preloader ' + this.state.cssClasses })
             );
         }
     }]);
