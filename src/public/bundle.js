@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "b47e1adc57f98cf1753f"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "2b127012a390a1ad80f9"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -1555,7 +1555,7 @@ exports = module.exports = __webpack_require__(30)(undefined);
 exports.i(__webpack_require__(81), "");
 
 // module
-exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  outline: none;\n  border: none;\n  -webkit-tap-highlight-color: transparent;\n  -webkit-tap-highlight-color: transparent;\n  box-sizing: border-box; }\n\nvideo::-webkit-media-controls {\n  display: none !important; }\n\nmenu,\nol,\nul {\n  list-style: none outside none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-weight: normal;\n  font-size: 100%; }\n\nb,\nstrong {\n  font-weight: 900; }\n\ninput[type=text],\ntextarea {\n  outline: none;\n  -webkit-appearance: none; }\n\nbutton::-moz-focus-inner,\ninput[type=\"button\"]::-moz-focus-inner,\ninput[type=\"file\"] > input[type=\"button\"]::-moz-focus-inner,\ninput[type=\"reset\"]::-moz-focus-inner,\ninput[type=\"submit\"]::-moz-focus-inner,\ninput[type=\"submit\"]::-moz-focus-inner {\n  border: none; }\n\ninput[type=text]::-ms-clear {\n  display: none;\n  width: 0;\n  height: 0; }\n\ninput[type=text]::-ms-reveal {\n  display: none;\n  width: 0;\n  height: 0; }\n\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration,\ninput[type=\"search\"]::-webkit-search-results-button,\ninput[type=\"search\"]::-webkit-search-results-decoration {\n  display: none; }\n\ninput::-ms-clear {\n  display: none !important; }\n\n.link,\na {\n  outline: none !important;\n  color: #333333;\n  text-decoration: none !important; }\n\n.h1,\n.h2,\n.h3,\nh1,\nh2,\nh3 {\n  margin-top: 0;\n  margin-bottom: 0; }\n\n.row {\n  margin: 0; }\n\nul {\n  margin: 0; }\n\np {\n  margin: 0; }\n\nhtml {\n  -webkit-text-size-adjust: none;\n  width: 100%;\n  font-size: 14px; }\n\nbody {\n  font-family: Arial, \"Helvetica Neue\", Helvetica, sans-serif;\n  color: #333333;\n  font-weight: 400;\n  width: 100%;\n  background: #bcbcbc;\n  font-size: 100%;\n  margin: 0;\n  padding: 0; }\n\n.swiper-container {\n  width: 100%;\n  padding-top: 3.57143em; }\n\n.swiper-wrapper {\n  height: auto; }\n\n.swiper-slide {\n  background: #fff no-repeat center;\n  background-size: cover;\n  width: 21.42857em;\n  height: 21.42857em;\n  border-radius: 1.14286em;\n  overflow: hidden;\n  text-align: center; }\n  .swiper-slide .name {\n    position: absolute;\n    color: #ffffff;\n    bottom: 0.71429em;\n    left: 0;\n    width: 100%;\n    text-shadow: 1px 1px 5px #000000; }\n", ""]);
+exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  outline: none;\n  border: none;\n  -webkit-tap-highlight-color: transparent;\n  -webkit-tap-highlight-color: transparent;\n  box-sizing: border-box; }\n\nvideo::-webkit-media-controls {\n  display: none !important; }\n\nmenu,\nol,\nul {\n  list-style: none outside none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-weight: normal;\n  font-size: 100%; }\n\nb,\nstrong {\n  font-weight: 900; }\n\ninput[type=text],\ntextarea {\n  outline: none;\n  -webkit-appearance: none; }\n\nbutton::-moz-focus-inner,\ninput[type=\"button\"]::-moz-focus-inner,\ninput[type=\"file\"] > input[type=\"button\"]::-moz-focus-inner,\ninput[type=\"reset\"]::-moz-focus-inner,\ninput[type=\"submit\"]::-moz-focus-inner,\ninput[type=\"submit\"]::-moz-focus-inner {\n  border: none; }\n\ninput[type=text]::-ms-clear {\n  display: none;\n  width: 0;\n  height: 0; }\n\ninput[type=text]::-ms-reveal {\n  display: none;\n  width: 0;\n  height: 0; }\n\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration,\ninput[type=\"search\"]::-webkit-search-results-button,\ninput[type=\"search\"]::-webkit-search-results-decoration {\n  display: none; }\n\ninput::-ms-clear {\n  display: none !important; }\n\n.link,\na {\n  outline: none !important;\n  color: #333333;\n  text-decoration: none !important; }\n\n.h1,\n.h2,\n.h3,\nh1,\nh2,\nh3 {\n  margin-top: 0;\n  margin-bottom: 0; }\n\n.row {\n  margin: 0; }\n\nul {\n  margin: 0; }\n\np {\n  margin: 0; }\n\nhtml {\n  -webkit-text-size-adjust: none;\n  width: 100%;\n  font-size: 14px; }\n\nbody {\n  font-family: Arial, \"Helvetica Neue\", Helvetica, sans-serif;\n  color: #333333;\n  font-weight: 400;\n  width: 100%;\n  background: #bcbcbc;\n  font-size: 100%;\n  margin: 0;\n  padding: 0;\n  height: 3000px; }\n\n.swiper-container {\n  width: 100%;\n  padding-top: 3.57143em; }\n\n.swiper-wrapper {\n  height: auto; }\n\n.swiper-slide {\n  background: #fff no-repeat center;\n  background-size: cover;\n  width: 21.42857em;\n  height: 21.42857em;\n  border-radius: 1.14286em;\n  overflow: hidden;\n  text-align: center; }\n  .swiper-slide .name {\n    position: absolute;\n    color: #ffffff;\n    bottom: 0.71429em;\n    left: 0;\n    width: 100%;\n    text-shadow: 1px 1px 5px #000000; }\n", ""]);
 
 // exports
 
@@ -24998,20 +24998,14 @@ var Products = function (_React$Component) {
                 console.log('a = ', a);
             }, false);*/
             document.addEventListener("touchstart", function (a) {
-                console.log('touchstart');
-                console.log('a = ', a);
-                thisO.setState({ yS: doc.scrollTop });
+                thisO.setState({ yS: window.scrollY });
             }, false);
 
             document.addEventListener("touchmove", function (a) {
-                console.log('touchmove');
-                console.log('a = ', a);
-                thisO.setState({ yM: doc.scrollTop });
+                thisO.setState({ yM: window.scrollY });
             }, false);
             document.addEventListener("touchend", function (a) {
-                console.log('touchend');
-                console.log('a = ', a);
-                thisO.setState({ yE: doc.scrollTop });
+                thisO.setState({ yE: window.scrollY });
             }, false);
         }
     }, {

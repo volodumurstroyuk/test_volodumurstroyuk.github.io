@@ -23,20 +23,14 @@ class Products extends React.Component {
             console.log('a = ', a);
         }, false);*/
         document.addEventListener("touchstart", (a) => {
-            console.log('touchstart');
-            console.log('a = ', a);
-            thisO.setState({yS: doc.scrollTop});
+            thisO.setState({yS: window.scrollY});
         }, false);
 
         document.addEventListener("touchmove", (a) => {
-            console.log('touchmove');
-            console.log('a = ', a);
-            thisO.setState({yM: doc.scrollTop});
+            thisO.setState({yM: window.scrollY});
         }, false);
         document.addEventListener("touchend", (a) => {
-            console.log('touchend');
-            console.log('a = ', a);
-            thisO.setState({yE: doc.scrollTop});
+            thisO.setState({yE: window.scrollY});
         }, false);
     }
 
