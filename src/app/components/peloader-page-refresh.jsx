@@ -16,13 +16,10 @@ class PreloaderPageRefresh extends React.Component {
         let thisO = this;
 
         if(y < maxScroll){
-            thisO.setState({cssClasses: 'show-all show-animation'});
+            thisO.setState({cssClasses: 'show-all'});
         } else if(y < maxScroll / 2){
-            thisO.setState({cssClasses: 'show-half show-animation'});
+            thisO.setState({cssClasses: 'show-half'});
         } else {
-            if(y < 0) {
-                thisO.setState({cssClasses: 'show-animation'});
-            }
             clearTimeout(thisO.showTimeout);
             thisO.showTimeout = setTimeout(() => {
                 thisO.setState({cssClasses: ''});
@@ -44,7 +41,7 @@ class PreloaderPageRefresh extends React.Component {
                 clearTimeout(thisO.refreshTimeout);
                 thisO.refreshTimeout = setTimeout(() => {
                     window.location.reload(true);
-                }, 500);
+                }, 1000);
             }
         }, false);
     }

@@ -16,31 +16,26 @@ $loaderSize: 40px;
     left: 50%;
     width: $loaderSize;
     height: $loaderSize;
-    margin: 5px -.5 * $loaderSize;
+    margin: 10px -.5 * $loaderSize;
     background: url("../images/design/proloader.svg") scroll transparent no-repeat center;
     background-size: contain;
     font-size: 100%;
     z-index: 999;
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
+    animation: spin .5s linear infinite;
     transition: 1s;
     opacity: 0;
     visibility: hidden;
 
-    &.show-animation{
-        animation: spin .75s linear infinite;
-    }
-
     &.show-half{
        opacity: .3;
         visibility: visible;
-        animation-duration: .75s;
     }
 
     &.show-all{
         opacity: 1;
         visibility: visible;
-        animation-duration: .25s;
     }
 }
 
