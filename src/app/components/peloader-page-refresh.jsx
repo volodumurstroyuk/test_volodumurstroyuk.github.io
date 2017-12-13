@@ -41,7 +41,7 @@ class PreloaderPageRefresh extends React.Component {
                 clearTimeout(thisO.refreshTimeout);
                 thisO.refreshTimeout = setTimeout(() => {
                     window.location.reload(true);
-                }, 1000);
+                }, 500);
             }
         }, false);
     }
