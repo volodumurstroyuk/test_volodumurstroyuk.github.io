@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "2b127012a390a1ad80f9"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "225cc6f5b03092abff7b"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -1555,7 +1555,7 @@ exports = module.exports = __webpack_require__(30)(undefined);
 exports.i(__webpack_require__(81), "");
 
 // module
-exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  outline: none;\n  border: none;\n  -webkit-tap-highlight-color: transparent;\n  -webkit-tap-highlight-color: transparent;\n  box-sizing: border-box; }\n\nvideo::-webkit-media-controls {\n  display: none !important; }\n\nmenu,\nol,\nul {\n  list-style: none outside none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-weight: normal;\n  font-size: 100%; }\n\nb,\nstrong {\n  font-weight: 900; }\n\ninput[type=text],\ntextarea {\n  outline: none;\n  -webkit-appearance: none; }\n\nbutton::-moz-focus-inner,\ninput[type=\"button\"]::-moz-focus-inner,\ninput[type=\"file\"] > input[type=\"button\"]::-moz-focus-inner,\ninput[type=\"reset\"]::-moz-focus-inner,\ninput[type=\"submit\"]::-moz-focus-inner,\ninput[type=\"submit\"]::-moz-focus-inner {\n  border: none; }\n\ninput[type=text]::-ms-clear {\n  display: none;\n  width: 0;\n  height: 0; }\n\ninput[type=text]::-ms-reveal {\n  display: none;\n  width: 0;\n  height: 0; }\n\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration,\ninput[type=\"search\"]::-webkit-search-results-button,\ninput[type=\"search\"]::-webkit-search-results-decoration {\n  display: none; }\n\ninput::-ms-clear {\n  display: none !important; }\n\n.link,\na {\n  outline: none !important;\n  color: #333333;\n  text-decoration: none !important; }\n\n.h1,\n.h2,\n.h3,\nh1,\nh2,\nh3 {\n  margin-top: 0;\n  margin-bottom: 0; }\n\n.row {\n  margin: 0; }\n\nul {\n  margin: 0; }\n\np {\n  margin: 0; }\n\nhtml {\n  -webkit-text-size-adjust: none;\n  width: 100%;\n  font-size: 14px; }\n\nbody {\n  font-family: Arial, \"Helvetica Neue\", Helvetica, sans-serif;\n  color: #333333;\n  font-weight: 400;\n  width: 100%;\n  background: #bcbcbc;\n  font-size: 100%;\n  margin: 0;\n  padding: 0;\n  height: 3000px; }\n\n.swiper-container {\n  width: 100%;\n  padding-top: 3.57143em; }\n\n.swiper-wrapper {\n  height: auto; }\n\n.swiper-slide {\n  background: #fff no-repeat center;\n  background-size: cover;\n  width: 21.42857em;\n  height: 21.42857em;\n  border-radius: 1.14286em;\n  overflow: hidden;\n  text-align: center; }\n  .swiper-slide .name {\n    position: absolute;\n    color: #ffffff;\n    bottom: 0.71429em;\n    left: 0;\n    width: 100%;\n    text-shadow: 1px 1px 5px #000000; }\n", ""]);
+exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  outline: none;\n  border: none;\n  -webkit-tap-highlight-color: transparent;\n  -webkit-tap-highlight-color: transparent;\n  box-sizing: border-box; }\n\nvideo::-webkit-media-controls {\n  display: none !important; }\n\nmenu,\nol,\nul {\n  list-style: none outside none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-weight: normal;\n  font-size: 100%; }\n\nb,\nstrong {\n  font-weight: 900; }\n\ninput[type=text],\ntextarea {\n  outline: none;\n  -webkit-appearance: none; }\n\nbutton::-moz-focus-inner,\ninput[type=\"button\"]::-moz-focus-inner,\ninput[type=\"file\"] > input[type=\"button\"]::-moz-focus-inner,\ninput[type=\"reset\"]::-moz-focus-inner,\ninput[type=\"submit\"]::-moz-focus-inner,\ninput[type=\"submit\"]::-moz-focus-inner {\n  border: none; }\n\ninput[type=text]::-ms-clear {\n  display: none;\n  width: 0;\n  height: 0; }\n\ninput[type=text]::-ms-reveal {\n  display: none;\n  width: 0;\n  height: 0; }\n\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration,\ninput[type=\"search\"]::-webkit-search-results-button,\ninput[type=\"search\"]::-webkit-search-results-decoration {\n  display: none; }\n\ninput::-ms-clear {\n  display: none !important; }\n\n.link,\na {\n  outline: none !important;\n  color: #333333;\n  text-decoration: none !important; }\n\n.h1,\n.h2,\n.h3,\nh1,\nh2,\nh3 {\n  margin-top: 0;\n  margin-bottom: 0; }\n\n.row {\n  margin: 0; }\n\nul {\n  margin: 0; }\n\np {\n  margin: 0; }\n\nhtml {\n  -webkit-text-size-adjust: none;\n  width: 100%;\n  font-size: 14px; }\n\nbody {\n  font-family: Arial, \"Helvetica Neue\", Helvetica, sans-serif;\n  color: #333333;\n  font-weight: 400;\n  width: 100%;\n  background: #bcbcbc;\n  font-size: 100%;\n  margin: 0;\n  padding: 0;\n  height: 3000px; }\n\n.swiper-container {\n  width: 100%;\n  padding-top: 3.57143em; }\n\n.swiper-wrapper {\n  height: auto; }\n\n.swiper-slide {\n  background: #fff no-repeat center;\n  background-size: cover;\n  width: 21.42857em;\n  height: 21.42857em;\n  border-radius: 1.14286em;\n  overflow: hidden;\n  text-align: center; }\n  .swiper-slide .name {\n    position: absolute;\n    color: #ffffff;\n    bottom: 0.71429em;\n    left: 0;\n    width: 100%;\n    text-shadow: 1px 1px 5px #000000; }\n\n@keyframes spin {\n  0% {\n    transform: rotate(0deg); }\n  100% {\n    transform: rotate(360deg); } }\n\n.pre-loader {\n  position: fixed;\n  top: 0;\n  left: 50%;\n  width: 3em;\n  height: 3em;\n  margin: -1.5em;\n  opacity: 0;\n  visibility: hidden;\n  background: url(" + __webpack_require__(82) + ") scroll transparent no-repeat center;\n  background-size: contain;\n  font-size: 100%;\n  border-radius: 0;\n  transition: none;\n  z-index: 999;\n  opacity: 1;\n  visibility: visible;\n  -webkit-transform-origin: 50% 50%;\n  transform-origin: 50% 50%;\n  animation: spin 0.4s linear infinite; }\n  .pre-loader.loader-show {\n    opacity: 1;\n    visibility: visible; }\n  .pre-loader.animation-show {\n    -webkit-transform-origin: 50% 50%;\n    transform-origin: 50% 50%;\n    animation: spin 0.4s linear infinite; }\n", ""]);
 
 // exports
 
@@ -32806,7 +32806,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(82)(content, options);
+var update = __webpack_require__(83)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(true) {
@@ -32838,6 +32838,12 @@ exports.push([module.i, "/**\n * Swiper 4.0.3\n * Most modern mobile touch slide
 
 /***/ }),
 /* 82 */
+/***/ (function(module, exports) {
+
+module.exports = "\"data:image/svg+xml,%3C?xml version='1.0' encoding='utf-8'?%3E %3C!-- Generator: Adobe Illustrator 19.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E %3Csvg version='1.1' id='Слой_2' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='-235 361.4 125 125' style='enable-background:new -235 361.4 125 125;' xml:space='preserve'%3E %3Cstyle type='text/css'%3E .st0%7Bfill:none;stroke:%238A8A8A;stroke-width:7;stroke-miterlimit:10;%7D %3C/style%3E %3Cpath class='st0' d='M-172.5,364.9c-32.6,0-59,26.4-59,59s26.4,59,59,59s59-26.4,59-59'/%3E %3C/svg%3E\""
+
+/***/ }),
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -32893,7 +32899,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(83);
+var	fixUrls = __webpack_require__(84);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -33209,7 +33215,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, exports) {
 
 
