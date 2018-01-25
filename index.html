@@ -45,6 +45,10 @@
 		cursor: pointer;
 		margin: 20px;
 	}
+
+	.test-btn.blue{
+		background: blue;
+	}
 </style>
 
 <video id="video11" preload="metadata" controls="controls" muted="muted" autoPlay playsInline src="cutted-Bright Light by Ray Ban-HD.mp4">
@@ -57,8 +61,9 @@
 
 <script>
     $(document)
+
         .ready(function () {
-            alert('upgr 7');
+            alert('upgr 8');
             $('video').mediaelementplayer();
         })
 
@@ -66,14 +71,18 @@
             document.getElementById('video11').muted = $(this).data().muted;
             document.getElementById('video11').volume = $(this).data().muted? 0: 1;
             $(this).data().muted = !$(this).data().muted;
+            $(this).toggleClass('blue', $(this).data().muted);
         })
+
         .on('click.newsfeed', '.mejs__fullscreen-button', function () {
             $(this).closest('.mejs__video').find('video:first').removeAttr('muted');
             var $video = $(this).closest('.mejs__video').find('video:first').get(0);
 
-            $video.muted = false;
-            $video.volume = 0.5;
-            $video.play();
+            setTimeout(function () {
+                $video.muted = false;
+                $video.volume = 1;
+                $video.play();
+            }, 1000)
 //            var $video = $(this).closest('.mejs__video').find('video:first').get(0),
             /*if (fsEl === null) {
                 $video.play();
