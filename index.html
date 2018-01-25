@@ -51,6 +51,7 @@
             $('video').mediaelementplayer();
         })
         .on('click.newsfeed', '.mejs__fullscreen-button', function () {
+            alert('click');
 //            var $video = $(this).closest('.mejs__video').find('video:first').get(0),
             var $video =document.getElementById('video11'),
                 fsEl = document.fullscreenElement || document.mozFullScreenElement || document.webkitFullscreenElement;
