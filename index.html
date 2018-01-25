@@ -47,15 +47,15 @@
 <script>
     $(document)
         .ready(function () {
-            alert('upgr 4');
+            alert('upgr 5');
             $('video').mediaelementplayer();
         })
         .on('click.newsfeed', '.mejs__fullscreen-button', function () {
             var $video = $(this).closest('.mejs__video').find('video:first').get(0);
 
-            $video.play();
             $video.muted = false;
-            $video.volume = 0.5;
+//            $video.volume = 0.5;
+            $video.play();
 //            var $video = $(this).closest('.mejs__video').find('video:first').get(0),
             /*if (fsEl === null) {
                 $video.play();
