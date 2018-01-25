@@ -47,19 +47,21 @@
 <script>
     $(document)
         .ready(function () {
-            alert('doc ready');
+            alert('upgr 4');
             $('video').mediaelementplayer();
         })
         .on('click.newsfeed', '.mejs__fullscreen-button', function () {
-            alert('click');
+            var $video = $(this).closest('.mejs__video').find('video:first').get(0);
+
+            $video.play();
+            $video.muted = false;
+            $video.volume = 0.5;
 //            var $video = $(this).closest('.mejs__video').find('video:first').get(0),
-            var $video =document.getElementById('video11'),
-                fsEl = document.fullscreenElement || document.mozFullScreenElement || document.webkitFullscreenElement;
-            if (fsEl === null) {
+            /*if (fsEl === null) {
                 $video.play();
                 $video.muted = false;
                 $video.volume = 0.5;
-            }
+            }*/
         })
 </script>
 
